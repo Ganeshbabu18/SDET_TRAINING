@@ -1,36 +1,23 @@
-package MidLevel;
+package MidLevelAssignment;
 import java.util.Scanner;
-public class Midlevel2
-{
-	 
-		public static void main(String args[])
-		{
-			int i, j, k, n, a;
-	 
-			Scanner sc = new Scanner(System.in);
-			System.out.println("The pattern is ");
-			a = 4;
-			for (i = 1; i <= 4; i++)
-			{
-				for (j = a; j > 1; j--)
-				{
-					System.out.print(" ");
-				}
-				for (k = i; k != 0; k--)
-				{
-					System.out.print(k);
-	 
-				}
-				a--;
-	 
-				for (int l = 2; l <= i; l++)
-				{
-					System.out.print(l);
-	 
-				}
-				System.out.println();
-			}
-	 
-		}
-	 
-	}
+public class MidlevelTwo {
+    public static void main(String args[]) {
+        int One, Two, Three, Four;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("The pattern is ");
+        Four = 4;
+        for (One = 1; One <= 4; One ++) {
+            for (Two = Four; Two > 1; Two--) {
+                System.out.print(" ");
+            }
+            for (Three = One; Three != 0; Three--) {
+                System.out.print(Three);
+            }
+            Four--;
+            for (int Assemble = 2; Assemble <= One; Assemble++) {
+                System.out.print(Assemble);
+            }
+            System.out.println();
+        }
+    }
+}
