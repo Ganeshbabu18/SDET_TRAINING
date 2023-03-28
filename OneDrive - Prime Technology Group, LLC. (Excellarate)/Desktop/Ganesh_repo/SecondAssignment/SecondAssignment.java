@@ -4,45 +4,40 @@ import java.util.HashSet;
 import java.util.LinkedList;
 public class SecondAssignment {
     private static final String Newdesignation = null;
-
     public static void main(String[] args) {
-        LinkedList<String> list1 = new LinkedList();
-        list1.add("London");
-        list1.add("New york");
+        LinkedList<String> ListOne = new LinkedList();
+        ListOne.add("London");
+        ListOne.add("New york");
 
-        LinkedList<String> list2 = new LinkedList();
-        list2.add("New york");
-        list2.add("Lima");
+        LinkedList<String> ListTwo = new LinkedList();
+        ListTwo.add("New york");
+        ListTwo.add("Lima");
 
-        LinkedList<String> list3 = new LinkedList();
-        list3.add("Lima");
-        list3.add("Sao paulo");
+        LinkedList<String> ListThree = new LinkedList();
+        ListThree.add("Lima");
+        ListThree.add("Sao paulo");
 
-        ArrayList<LinkedList> al = new ArrayList<LinkedList>();
-        al.add(list1);
-        al.add(list2);
-        al.add(list3);
+        ArrayList<LinkedList> AllList = new ArrayList<LinkedList>();
+        AllList.add(ListOne);
+        AllList.add(ListTwo);
+        AllList.add(ListThree);
 
-        System.out.println(al);
-        String designation = findDesignation(al);
-        System.out.println(designation);
+        System.out.println(AllList);
+        String Designation = findDesignation(AllList);
+        System.out.println(Designation);
     }
-
-    private static String findDesignation(ArrayList<LinkedList> al) {
-
-        HashSet<String> Startcities = new HashSet<>();
-        HashSet<String> endcities = new HashSet<>();
-        for (LinkedList<String> path : al) {
-            Startcities.add(path.get(0));
-            endcities.add(path.get(1));
+    private static String findDesignation(ArrayList<LinkedList> AllList) {
+        HashSet<String> StartCities = new HashSet<>();
+        HashSet<String> EndCities = new HashSet<>();
+        for (LinkedList<String> path : AllList) {
+            StartCities.add(path.get(0));
+            EndCities.add(path.get(1));
         }
-        for (String endcity : endcities) {
-            if (!Startcities.contains(endcity)) {
-
-                return endcity;
+        for (String EndCity : EndCities) {
+            if (!StartCities.contains(EndCity)) {
+                return EndCity;
             }
         }
-
         return null;
     }
 }
