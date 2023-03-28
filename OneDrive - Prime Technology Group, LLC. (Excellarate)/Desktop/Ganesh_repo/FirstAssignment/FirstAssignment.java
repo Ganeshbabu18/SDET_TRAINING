@@ -1,26 +1,22 @@
 package MidLevelAssignment;
-
 public class FirstAssignment {
-
         public static void main(String[] args) {
-
-            String s ="abacbc";
-            char search1= 'a';
-            char search2= 'b';
-            char search3= 'c';
-            int count = 0;
-            int count1 = 0;
-            int count2 = 0;
-
-            for (int i=0; i<s.length();i++) {
-                if (search1==s.charAt(i))
-                    count++;
-                else if(search2==s.charAt(i))
-                    count1++;
-                else if(search3==s.charAt(i))
-                    count2++;
+            String Occurance ="abacbc";
+            char SearchOne= 'a';
+            char SearchTwo= 'b';
+            char SearchThree= 'c';
+            int CountOne = 0;
+            int CountTwo = 0;
+            int CountThree = 0;
+            for (int Number=0; Number<Occurance.length();Number++) {
+                if (SearchOne==Occurance.charAt(Number))
+                    CountOne++;
+                else if(SearchTwo==Occurance.charAt(Number))
+                    CountTwo++;
+                else if(SearchThree==Occurance.charAt(Number))
+                    CountThree++;
             }
-            if ((count==count1)&&(count1==count2))
+            if ((CountOne==CountTwo)&&(CountTwo==CountThree))
             {
                 System.out.println("All Characters Have equal number of Occurrences");
             }
@@ -29,4 +25,3 @@ public class FirstAssignment {
             }
         }
     }
-
