@@ -12,7 +12,7 @@ public class Midlevelfourth {
         System.out.println("mixString(\"abc\", \"xyz\") → " + result);
     }
         public static void main(String[] args) {
-            Midlevelfourth Object = new Midlevelfourth();
-            Object.mixString("abc", "xyz");
+            Midlevelfourth mixObject = new Midlevelfourth();
+            mixObject.mixString("abc", "xyz");
         }
     }
